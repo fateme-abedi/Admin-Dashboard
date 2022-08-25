@@ -12,7 +12,7 @@
 }
 
 body{
-  font-size: 62.5rem;
+  font-size: 62.5%;
   margin:0;
 }
 
@@ -33,4 +33,5 @@ body{
   border-radius: 2rem;
   background:var(--glass);
   overflow: hidden;
+  gap:13px;
 }
