@@ -1,0 +1,121 @@
+.compactCard{
+    display:flex;
+    flex:1;
+    height:9rem !important;
+    color:white;
+    border-radius: 0.7rem !important;
+    position:relative;
+    padding:1rem;
+    cursor: pointer;
+    
+}
+
+.compactCard:hover{
+    box-shadow: none !important;
+}
+
+.radialBar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.radialBar>span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.CircularProgressbar{
+    width: 6rem !important;
+    overflow:visible !important;
+}
+
+.CircularProgressbar-path{
+    stroke:#fff !important;
+    stroke-width:12px !important;
+    filter:drop-shadow(2px 4px 6px #fff)
+}
+
+.CircularProgressbar-trail{
+    display: none;
+}
+
+.CircularProgressbar-text{
+    fill:#fff !important;
+   
+}
+
+.detail{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+.detail>span:nth-child(2){
+    font-size: 22px !important;
+    font-weight: bold !important;
+}
+.detail>span:nth-child(3){
+    font-size: 12px !important;
+   
+}
+
+
+
+/* Expended Card */
+.expandedCard{
+    position:absolute;
+    height: 70vh;
+    width: 60%;
+    border-radius:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left:13rem;
+    z-index: 9;
+    font-size: 22px;
+    padding:1rem;
+
+}
+
+.expandedCard>span:nth-of-type(1){
+    color:#fff;
+    font-size: 26px;
+    font-weight: bold !important;
+    text-shadow: 0px 0px 15px #fff;
+}
+
+.expandedCard>span:nth-of-type(2){
+    color:rgb(223,222,222);
+    font-size: 17px;
+}
+
+.chartContainer{
+    width:60%;
+}
+
+@media screen and (max-width:1200px){
+    .expandedCard{
+        top: 2rem;
+        height: 70vh;
+        left:6rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .compactCard{
+        margin-bottom: 10px;
+    }
+
+    .expandedCard{
+        top:8rem;
+        left:15px;
+        width: 80%;
+        height: 50%;
+    }
+}
