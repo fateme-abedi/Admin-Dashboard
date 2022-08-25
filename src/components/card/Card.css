@@ -98,3 +98,24 @@
 .chartContainer{
     width:60%;
 }
+
+@media screen and (max-width:1200px){
+    .expandedCard{
+        top: 2rem;
+        height: 70vh;
+        left:6rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .compactCard{
+        margin-bottom: 10px;
+    }
+
+    .expandedCard{
+        top:8rem;
+        left:15px;
+        width: 80%;
+        height: 50%;
+    }
+}

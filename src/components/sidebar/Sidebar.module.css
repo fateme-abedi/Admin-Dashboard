@@ -69,3 +69,51 @@
     width: 100%;
     
 }
+
+.bars{
+    display:none !important;
+}
+
+@media screen and (max-width:1200px)
+{
+    .menuItem>span{
+        display:none;
+    }
+
+    .logo{
+        display:none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .sidebar{
+        position:fixed;
+        width: 32%;
+        height: 100%;background: #ffe0e0;
+        padding-right: 1rem;z-index: 9;
+    }
+
+    .menuItem>span{
+        display:block;
+    }
+
+    .logo{
+        display:flex;
+    }
+
+    .menu .menuItem:last-child{
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+
+.bars{
+    display:flex;
+    position:fixed;
+    top: 2rem;
+    background: #ffe0e0;
+    padding:10px;
+    border-radius: 10px;
+    z-index: 9;
+
+}

@@ -1,4 +1,32 @@
 .rightSide{
-    padding:3.1rem 0;
+    
+    display:flex;
+    width:95%;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+@media screen and (max-width:1200px){
+    .rightSide{
+        justify-content:flex-start;
+        margin-top: 3rem;
+    }
+
+    .rightSide>h1:nth-of-type(2){
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .rightSide{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .rightSide>div{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
 }
 
